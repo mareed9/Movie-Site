@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="http://fonts.cdnfonts.com/css/august" rel="stylesheet" />
+    <title>TechTask</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link href="http://fonts.cdnfonts.com/css/august" rel="stylesheet" />
-  <title>TechTask</title>
-</head>
-
-<body>
-  <div class="full-s col-12 center">
-    <div class="container p-0 col-11 pt-3">
-      <div class="center pb-5">
-        <h1 class="bigtitle">TOP 3 series to watch</h1>
-      </div>
-      <div class="movies content center pt-3 col-12" id="movies">
+  <body>
+    <div class="full-s col-12 center">
+      <div class="container p-0 col-11 pt-3">
+        <div class="center pb-5">
+          <h1 class="bigtitle">TOP 3 series to watch</h1>
+        </div>
+        <div class="movies content center pt-3 col-12" id="movies"></div>
       </div>
     </div>
-  </div>
 
-  <div class="col-12 p-0 m-0">
-    <video autoplay loop id="myVideo" class="col-12 p-0 m-0">
-      <source src="video/shortMovie.mp4" type="video/mp4">
-    </video>
-    <div class="video">
-      <h1 class="ty">Thank you for visiting us!</h1>
-      <p>If you want more suggestions for series and movies, feel free to contact us.</p>
-      <p>Of course, if you have a few more seconds of attention, check out the IMDb rating graphic slightly below.</p>
-      <button id="startBtn" onclick="videoStart()">Pause</button>
-      <button id="muteBtn" onclick="videoMute()">Mute</button>
+    <div class="col-12 p-0 m-0">
+      <video autoplay loop id="myVideo" class="col-12 p-0 m-0">
+        <source src="video/shortMovie.mp4" type="video/mp4" />
+      </video>
+      <div class="video">
+        <h1 class="ty">Thank you for visiting us!</h1>
+        <p>
+          If you want more suggestions for series and movies, feel free to
+          contact us.
+        </p>
+        <p>
+          Of course, if you have a few more seconds of attention, check out the
+          IMDb rating graphic slightly below.
+        </p>
+        <button id="startBtn" onclick="videoStart()">Pause</button>
+        <button id="muteBtn" onclick="videoMute()">Mute</button>
+      </div>
     </div>
-  </div>
 
-  <div class="col-12 center graph pt-5 pb-5">
-    <h1>Graph of ratings</h1>
-    <canvas id="myChart" style="width: 100%; max-width: 800px"></canvas>
-  </div>
-  <script src="index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-  <script src="chart.js"></script>
-  <script src="video.js"></script>
-</body>
-
+    <div class="col-12 center graph pt-5 pb-5">
+      <h1>Graph of ratings</h1>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/video.js"></script>
+  </body>
 </html>

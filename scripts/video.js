@@ -1,6 +1,6 @@
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("startBtn");
-var mutebtn = document.getElementById("muteBtn");
+const video = document.getElementById("myVideo");
+const btn = document.getElementById("startBtn");
+const mutebtn = document.getElementById("muteBtn");
 
 function videoStart() {
   if (video.paused) {
